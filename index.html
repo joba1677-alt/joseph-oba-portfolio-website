@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portfolio | Joseph Oba</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Joseph Oba<span>.dev</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">🌙</button>
+        <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Open Menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <p class="badge">software engineering Student</p>
+        <h1>Hi, I'm <span>Joseph Oba</span></h1>
+        <p class="subtitle">
+          I build clean, accessible web applications and solve real-world problems with code. Currently seeking Summer 2027 software engineering internships.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <p>
+          I am a junior pursuing a B.S. in software engineering. My coursework focuses on data structures, web engineering, and human-computer interaction. Outside of class, I contribute to campus hackathons and open-source tools.
+        </p>
+        <div class="skills-list">
+          <h3>Technical Skills</h3>
+          <div class="tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript (ES6+)</span>
+            <span>Python</span>
+            <span>Git & GitHub</span>
+            <span>SQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section container">
+      <h2 class="section-title">Education</h2>
+      <div class="card">
+        <h3>B.S. in software engineering</h3>
+        <p class="meta">State University • Expected Graduation: May 2028 • GPA: 3.8/4.0</p>
+        <p>Relevant Coursework: Algorithms, Web Development, Database Systems, Operating Systems.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section with Category Filter -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Academic & Personal Projects</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="data">Data & Tools</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="web">
+          <h3>Campus Study Planner</h3>
+          <p>A task and exam countdown tracker built with local storage persistence for university students.</p>
+          <p class="tech-stack">HTML • CSS • JavaScript</p>
+          <a href="#" class="project-link">View Code →</a>
+        </article>
+
+        <article class="project-card" data-category="data">
+          <h3>Course Grade Calculator</h3>
+          <p>An interactive weighted grade estimator that helps students calculate required final exam scores.</p>
+          <p class="tech-stack">JavaScript • Charting</p>
+          <a href="#" class="project-link">View Code →</a>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <h3>Weather Dashboard</h3>
+          <p>A responsive weather forecast app fetching real-time city weather conditions via REST APIs.</p>
+          <p class="tech-stack">HTML • CSS Grid • Fetch API</p>
+          <a href="#" class="project-link">View Code →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact Me</h2>
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Joseph Oba. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
